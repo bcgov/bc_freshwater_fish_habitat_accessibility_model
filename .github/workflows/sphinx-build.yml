@@ -1,0 +1,42 @@
+# from https://github.com/adempiere/docs/blob/master/.github/workflows/main.yml
+# This is a basic workflow to help you get started with Actions
+name: docs-deploy
+# Controls when the action will run. Triggers the workflow on push or pull request
+# events but only for the main branch
+on:
+  push:
+    branches: [ main ]
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  docs:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - uses: erpcya/sphinx-action@feature/#update-sphinx-base-image
+      with:
+        pre-build-command: "pip install sphinx_rtd_theme"
+        docs-folder: "docs/"
+        build-command: "sphinx-build -b html . _build/html"
+    - uses: erpcya/sphinx-action@feature/#update-sphinx-base-image
+      with:
+        pre-build-command: "pip install sphinx_rtd_theme"
+        docs-folder: "docs/"
+        build-command: "sphinx-build -b epub . _build/epub"
+    - name: Commit documentation changes
+      run: |
+        git clone https://github.com/${{ github.repository }}.git --branch gh-pages --single-branch gh-pages
+        cp -r docs/_build/html/* gh-pages/
+        cd gh-pages
+        touch .nojekyll
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add .
+        git commit -m "Update documentation" -a || true
+        # The above command will fail if no changes were present, so we ignore
+        # that.
+    - name: Push changes
+      uses: ad-m/github-push-action@master
+      with:
+        branch: gh-pages
+        directory: gh-pages
+        github_token: ${{ secrets.GITHUB_TOKEN }}
