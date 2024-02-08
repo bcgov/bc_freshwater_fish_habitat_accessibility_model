@@ -23,4 +23,4 @@ column,description
 ``dam_dnstr_ind``,Indicates if a dam is the first barrier downstream of the stream
 ``dam_hydro_dnstr_ind``,Indicates if a hydro dam is the first barrier downstream of the stream
 ``remediated_dnstr_ind``,Indicates if a remediation is present downstream of the stream and before any additional barriers
-``geom``,The point geometry associated with the feature
+``geom``,The line geometry associated with the feature
