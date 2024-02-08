@@ -67,20 +67,20 @@ model_access
 ============================
 
 FWA streams and access model output for watersheds with documented salmon or steelhead
-presence. Access model output columns `model_access_salmon` and `model_access_steelhead`
+presence. Access model output columns ``model_access_salmon`` and ``model_access_steelhead``
 indicate the modelled status of a given stream. Values are:
 
-`OBSERVED` - no known natural barriers downstream, known observation of target species
+``OBSERVED`` - no known natural barriers downstream, known observation of target species
 present upstream. In the absence of anthropogenic barriers, target species have been observed
 to access this stream.
 
-`INFERRED` - no known natural barriers downstream, no known observation of target species
+``INFERRED`` - no known natural barriers downstream, no known observation of target species
 present upstream. In the absence of anthropogenic barriers, target species could potentially
 access this stream (presuming all else is equal and adequate flow is present in the stream).
 
-`NATURAL_BARRIER` - natural barrier downstream, inaccessible to target speces.
+``NATURAL_BARRIER`` - natural barrier downstream, inaccessible to target speces.
 
-`NULL` - species is not documented as present in this watershed group.
+``NULL`` - species is not documented as present in this watershed group.
 
 .. csv-table::
    :file: tables/freshwater_fish_habitat_accessibility_model/model_access.csv
