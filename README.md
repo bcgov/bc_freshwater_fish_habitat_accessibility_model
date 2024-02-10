@@ -8,7 +8,7 @@ Data are available as a zipped geopackage [freshwater_fish_habitat_accessibility
 
 ## Documentation
 
-For modelling background and complete description of all tables and columns in the data distribution, see [the documentation](https://smnorris.github.io/bc_freshwater_fish_habitat_accessibility_model).
+For modelling background and complete description of all tables and columns in the data distribution, see [the documentation](https://bcgov.github.io/bc_freshwater_fish_habitat_accessibility_model).
 
 ## Generate a data distribution
 
