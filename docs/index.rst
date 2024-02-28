@@ -11,4 +11,5 @@ Pacific Salmon (Chinook, Chum, Coho, Pink, Sockeye) and Steelhead accessibility 
    02_description
    03_example_use_cases
    04_data_distribution
-   05_credits
+   05_contacts
+   06_credits

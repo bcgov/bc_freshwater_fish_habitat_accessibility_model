@@ -10,3 +10,5 @@ With over 500,000 mapped locations of road/rail stream crossings representing po
 - potential anthropogenic barriers (mapped road/railway stream crossings)
 
 With this information, users can eliminate many potential barriers from further consideration (for example, sites upstream of natural barriers or hydro dams) and further prioritize watersheds or individual sites for assessment or remediation by ranking by various indicators.
+
+Note that the data included in the `freshwater_fish_habitat_accessibility_model` distribution is a subset of what is available in [`bcfishpass`](https://github.com/smnorris/bcfishpass), the application/database that generates this model and additional fish passage modelling/monitoring products.
