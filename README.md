@@ -10,11 +10,12 @@ Data are available as a zipped geopackage [freshwater_fish_habitat_accessibility
 
 For modelling background and complete description of all tables and columns in the data distribution, see [the documentation](https://bcgov.github.io/bc_freshwater_fish_habitat_accessibility_model).
 
-## Generate a data distribution
+## Processing
 
-Requires access to a `bcfishpass` database:
+This data is extracted from the primary bcfishpass database on a scheduled (weekly) basis:
 
-      ./freshwater_fish_habitat_accessibility_model.sh
+- [job script](https://github.com/smnorris/bcfishpass/blob/main/jobs/release_freshwater_fish_habitat_accessibility_model)
+- [workflow](https://github.com/smnorris/bcfishpass/blob/main/.github/workflows/production-bcfishpass.yaml)
 
 
 ## License
