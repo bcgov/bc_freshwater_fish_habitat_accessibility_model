@@ -22,7 +22,7 @@ copyright = '2024, Province of British Columbia'
 author = 'Simon Norris, Craig Mount, bcfishpass contributors'
 
 # The full version, including alpha/beta/rc tags
-release = 'v0.1.0dev0'
+release = 'v0.1.0'
 
 
 # -- General configuration ---------------------------------------------------
