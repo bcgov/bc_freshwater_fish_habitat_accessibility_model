@@ -4,7 +4,7 @@ Generate Pacific Salmon (Chinook, Chum, Coho, Pink, Sockeye) and Steelhead acces
 
 ## Data distribution
 
-Data are available as a zipped geopackage [freshwater_fish_habitat_accessibility_MODEL.gpkg.zip](https://bcfishpass.s3.us-west-2.amazonaws.com/freshwater_fish_habitat_accessibility_MODEL.gpkg.zip)
+Data are available as a zipped geopackage [freshwater_fish_habitat_accessibility_MODEL.gpkg.zip](https://nrs.objectstore.gov.bc.ca/bchamp/freshwater_fish_habitat_accessibility_MODEL.gpkg.zip)
 
 ## Documentation
 
