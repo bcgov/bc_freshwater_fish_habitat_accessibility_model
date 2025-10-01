@@ -1,5 +1,5 @@
 column,description
-``observation_key``,bcfishobs stable unique id, a hash of columns [source, species_code, observation_date, utm_zone, utm_easting, utm_northing, life_stage_code, activity_code]
+``observation_key``,"bcfishobs stable unique id, a hash of these columns: source, species_code, observation_date, utm_zone, utm_easting, utm_northing, life_stage_code, activity_code""
 ``species_code``,"Code corresponding to the species observed, see https://github.com/poissonconsulting/fishbc/blob/master/data-raw/whse_fish_species_cd/whse_fish_species_cd.csv for species descriptions"
 ``observation_date``,The date on which the observation occurred
 ``activity_code``,"The fish activity code from the source dataset, such as I for Incubating, or SPE for Spawning In Estuary"
